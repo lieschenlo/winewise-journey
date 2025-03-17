@@ -1,3 +1,4 @@
+
 import type { Config } from "tailwindcss";
 
 export default {
@@ -24,6 +25,32 @@ export default {
 				ring: 'hsl(var(--ring))',
 				background: 'hsl(var(--background))',
 				foreground: 'hsl(var(--foreground))',
+				wine: {
+					50: '#FCF7F7',
+					100: '#F8EFEF',
+					200: '#ECD6D6',
+					300: '#DFBDBD',
+					400: '#C58B8B',
+					500: '#AB5959',
+					600: '#9A5050',
+					700: '#673636',
+					800: '#4E2828',
+					900: '#341B1B',
+					950: '#1A0D0D',
+				},
+				cream: {
+					50: '#FFFDF5',
+					100: '#FFFBEB',
+					200: '#FFF4CD',
+					300: '#FEEDAF',
+					400: '#FDE073',
+					500: '#FCD337',
+					600: '#E3BE32',
+					700: '#977F21',
+					800: '#715F19',
+					900: '#4B4010',
+					950: '#282208',
+				},
 				primary: {
 					DEFAULT: 'hsl(var(--primary))',
 					foreground: 'hsl(var(--primary-foreground))'
@@ -84,11 +111,63 @@ export default {
 					to: {
 						height: '0'
 					}
+				},
+				'fade-in': {
+					'0%': {
+						opacity: '0',
+						transform: 'translateY(10px)'
+					},
+					'100%': {
+						opacity: '1',
+						transform: 'translateY(0)'
+					}
+				},
+				'fade-out': {
+					'0%': {
+						opacity: '1',
+						transform: 'translateY(0)'
+					},
+					'100%': {
+						opacity: '0',
+						transform: 'translateY(10px)'
+					}
+				},
+				'slide-in': {
+					'0%': {
+						opacity: '0',
+						transform: 'translateY(20px)'
+					},
+					'100%': {
+						opacity: '1',
+						transform: 'translateY(0)'
+					}
+				},
+				'image-glow': {
+					'0%': {
+						opacity: '0',
+						'box-shadow': '0 0 0 0 rgba(171, 89, 89, 0)'
+					},
+					'50%': {
+						opacity: '1',
+						'box-shadow': '0 0 30px 20px rgba(171, 89, 89, 0.3)'
+					},
+					'100%': {
+						opacity: '0',
+						'box-shadow': '0 0 0 0 rgba(171, 89, 89, 0)'
+					}
 				}
 			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
-				'accordion-up': 'accordion-up 0.2s ease-out'
+				'accordion-up': 'accordion-up 0.2s ease-out',
+				'fade-in': 'fade-in 0.4s ease-out',
+				'fade-out': 'fade-out 0.4s ease-out',
+				'slide-in': 'slide-in 0.6s ease-out',
+				'image-glow': 'image-glow 4s ease-in-out infinite'
+			},
+			fontFamily: {
+				serif: ['Playfair Display', 'serif'],
+				sans: ['Inter', 'sans-serif'],
 			}
 		}
 	},
