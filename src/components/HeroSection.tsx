@@ -5,7 +5,7 @@ import { motion } from 'framer-motion';
 const HeroSection = () => {
   return (
     <section className="min-h-screen pt-32 pb-16 px-6 flex flex-col justify-center relative overflow-hidden">
-      <div className="absolute top-0 right-0 w-full h-full bg-[url('https://images.unsplash.com/photo-1506377295141-e428b97a6973?q=80&w=2070')] bg-cover bg-center opacity-10 z-0"></div>
+      <div className="absolute top-0 right-0 w-full h-full bg-[url('https://images.unsplash.com/photo-1516594915697-87eb3b1c14ea?q=80&w=2070')] bg-cover bg-center opacity-10 z-0"></div>
       
       <div className="absolute top-1/2 right-0 transform -translate-y-1/2 w-96 h-96 rounded-full bg-cream-200 blur-[120px] opacity-40 z-0"></div>
       <div className="absolute bottom-0 left-0 w-96 h-96 rounded-full bg-wine-300 blur-[120px] opacity-20 z-0"></div>
@@ -18,7 +18,7 @@ const HeroSection = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
           >
-            Master the art of wine appreciation
+            Wine Lectures Series
           </motion.span>
           
           <motion.h1 
@@ -27,7 +27,7 @@ const HeroSection = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.1 }}
           >
-            Your Journey into the <span className="text-wine-500">World of Wine</span> Starts Here
+            Discover the <span className="text-wine-500">Art & Science</span> of Wine Through Expert Lectures
           </motion.h1>
           
           <motion.p 
@@ -36,7 +36,7 @@ const HeroSection = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.2 }}
           >
-            Join our comprehensive wine education platform and transform your wine experience. From novice to connoisseur, our interactive courses guide you through every step.
+            Join renowned sommeliers and wine experts for immersive lectures that elevate your wine knowledge from basic to connoisseur level.
           </motion.p>
           
           <motion.div 
@@ -46,10 +46,10 @@ const HeroSection = () => {
             transition={{ duration: 0.5, delay: 0.3 }}
           >
             <Button className="bg-wine-600 hover:bg-wine-700 text-white py-6 px-8 text-lg">
-              Explore Courses
+              Browse Lectures
             </Button>
             <Button variant="outline" className="border-wine-300 text-wine-700 hover:bg-wine-50 py-6 px-8 text-lg">
-              Take a Free Tasting
+              View Free Sample
             </Button>
           </motion.div>
           
@@ -71,8 +71,8 @@ const HeroSection = () => {
               ))}
             </div>
             <div>
-              <div className="font-medium">Join 2,000+ wine enthusiasts</div>
-              <div className="text-sm text-gray-500">Learning daily about wine</div>
+              <div className="font-medium">Join 3,500+ wine enthusiasts</div>
+              <div className="text-sm text-gray-500">Attending our lectures monthly</div>
             </div>
           </motion.div>
         </div>
@@ -85,8 +85,8 @@ const HeroSection = () => {
             className="relative z-10"
           >
             <img 
-              src="https://images.unsplash.com/photo-1510812431401-41d2bd2722f3?q=80&w=2070" 
-              alt="Wine glasses" 
+              src="https://images.unsplash.com/photo-1578911373434-0cb395d2fe4d?q=80&w=1974" 
+              alt="Wine lecture" 
               className="rounded-2xl shadow-2xl max-w-md"
             />
             <div className="absolute -inset-4 rounded-2xl animate-image-glow"></div>
@@ -104,10 +104,10 @@ const HeroSection = () => {
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                 </svg>
               </div>
-              <div className="font-medium">Interactive Learning</div>
+              <div className="font-medium">Expert Instructors</div>
             </div>
             <p className="text-sm text-gray-600">
-              Our courses combine videos, tastings, and quizzes for an engaging experience.
+              Learn from certified sommeliers with decades of industry experience
             </p>
           </motion.div>
           
@@ -123,10 +123,10 @@ const HeroSection = () => {
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 6v6m0 0v6m0-6h6m-6 0H6" />
                 </svg>
               </div>
-              <div className="font-medium">Expert Guidance</div>
+              <div className="font-medium">Live Tastings</div>
             </div>
             <p className="text-sm text-gray-600">
-              Learn from certified sommeliers and wine experts with years of experience.
+              Interactive sessions with guided tastings of premium wines
             </p>
           </motion.div>
         </div>
