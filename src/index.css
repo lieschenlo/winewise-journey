@@ -1,5 +1,5 @@
 
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -16,26 +16,26 @@
     --popover: 0 0% 100%;
     --popover-foreground: 220 10% 25%;
 
-    --primary: 340 40% 45%;
+    --primary: 25 25% 45%;
     --primary-foreground: 0 0% 98%;
 
-    --secondary: 35 85% 65%;
-    --secondary-foreground: 340 40% 45%;
+    --secondary: 35 55% 85%;
+    --secondary-foreground: 25 25% 45%;
 
     --muted: 220 10% 96%;
     --muted-foreground: 220 10% 45%;
 
-    --accent: 340 35% 95%;
-    --accent-foreground: 340 40% 45%;
+    --accent: 25 20% 95%;
+    --accent-foreground: 25 25% 45%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 0 0% 98%;
 
     --border: 220 10% 90%;
     --input: 220 10% 90%;
-    --ring: 340 40% 45%;
+    --ring: 25 25% 45%;
 
-    --radius: 0.5rem;
+    --radius: 0.25rem;
 
     --sidebar-background: 0 0% 98%;
     --sidebar-foreground: 240 5.3% 26.1%;
@@ -54,10 +54,6 @@
   body {
     @apply bg-background text-foreground font-sans;
   }
-
-  h1, h2, h3, h4, h5, h6 {
-    @apply font-serif;
-  }
 }
 
 /* Custom animations */
@@ -66,19 +62,11 @@
     @apply transition-transform duration-300 hover:scale-[1.02];
   }
   
-  .text-glow {
-    text-shadow: 0 0 15px rgba(252, 211, 55, 0.5);
-  }
-  
   .glass-effect {
     @apply backdrop-blur-md bg-white/30 border border-white/20;
   }
   
   .card-hover {
     @apply transition-all duration-300 hover:shadow-lg hover:-translate-y-1;
-  }
-  
-  .underline-animation {
-    @apply relative after:absolute after:bottom-0 after:left-0 after:h-[2px] after:w-0 after:bg-wine-500 after:transition-all after:duration-300 hover:after:w-full;
   }
 }

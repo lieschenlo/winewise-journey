@@ -7,7 +7,6 @@ import FeaturedCourses from "@/components/FeaturedCourses";
 import Testimonials from "@/components/Testimonials";
 import AboutSection from "@/components/AboutSection";
 import ParallaxSection from "@/components/ParallaxSection";
-import Newsletter from "@/components/Newsletter";
 import Footer from "@/components/Footer";
 
 const Index = () => {
@@ -24,7 +23,6 @@ const Index = () => {
       <ParallaxSection />
       <Testimonials />
       <AboutSection />
-      <Newsletter />
       <Footer />
     </div>
   );

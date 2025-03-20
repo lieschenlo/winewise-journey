@@ -11,12 +11,12 @@ const ParallaxSection = () => {
   });
   
   const y = useTransform(scrollYProgress, [0, 1], ["0%", "20%"]);
-  const opacity = useTransform(scrollYProgress, [0, 0.5, 1], [0.7, 1, 0.7]);
+  const opacity = useTransform(scrollYProgress, [0, 0.5, 1], [0.8, 1, 0.8]);
 
   return (
     <section 
       ref={ref}
-      className="min-h-[400px] relative flex items-center justify-center overflow-hidden"
+      className="min-h-[350px] relative flex items-center justify-center overflow-hidden"
     >
       <motion.div 
         className="absolute inset-0 bg-cover bg-center bg-no-repeat z-0"
@@ -27,26 +27,17 @@ const ParallaxSection = () => {
         }}
       />
       
-      <div className="absolute inset-0 bg-wine-800/50 backdrop-blur-sm z-10"></div>
+      <div className="absolute inset-0 bg-black/30 backdrop-blur-[2px] z-10"></div>
       
       <div className="relative z-20 max-w-3xl mx-auto text-center px-6">
-        <motion.p 
-          className="text-white/90 text-lg mb-8 font-light"
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.6, delay: 0.1 }}
-        >
-          From vineyard to glass
-        </motion.p>
         <motion.h2 
-          className="font-serif text-3xl md:text-4xl font-bold text-white mb-8"
+          className="text-3xl md:text-4xl font-medium text-white mb-6"
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
         >
-          Transform Your Wine Experience
+          Join Our Next Lecture
         </motion.h2>
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -54,8 +45,8 @@ const ParallaxSection = () => {
           viewport={{ once: true }}
           transition={{ duration: 0.6, delay: 0.2 }}
         >
-          <Button className="bg-white hover:bg-cream-100 text-wine-900 font-medium">
-            Join Our Next Lecture
+          <Button className="bg-white hover:bg-gray-100 text-gray-800 font-medium px-8">
+            Register Now
           </Button>
         </motion.div>
       </div>
