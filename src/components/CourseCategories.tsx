@@ -33,7 +33,7 @@ const CourseCategories = () => {
           viewport={{ once: true }}
           transition={{ duration: 0.5 }}
         >
-          Explore Wine Topics
+          Explore.
         </motion.h2>
         
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
