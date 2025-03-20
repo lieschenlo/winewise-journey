@@ -6,7 +6,6 @@ import CourseCategories from "@/components/CourseCategories";
 import FeaturedCourses from "@/components/FeaturedCourses";
 import Testimonials from "@/components/Testimonials";
 import AboutSection from "@/components/AboutSection";
-import ParallaxSection from "@/components/ParallaxSection";
 import Footer from "@/components/Footer";
 
 const Index = () => {
@@ -20,7 +19,6 @@ const Index = () => {
       <HeroSection />
       <CourseCategories />
       <FeaturedCourses />
-      <ParallaxSection />
       <Testimonials />
       <AboutSection />
       <Footer />
