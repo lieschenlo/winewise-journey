@@ -18,7 +18,7 @@ const AboutSection = () => {
               Learn Wine Through Experience
             </h2>
             <p className="text-gray-700 mb-8 max-w-lg">
-              At WineWise, we believe that understanding wine comes through experiencing it. Our courses combine essential knowledge with guided tastings to build your confidence.
+              At WineLecture, we believe that understanding wine comes through experiencing it. Our courses combine essential knowledge with guided tastings to build your confidence.
             </p>
             
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 mb-8">
