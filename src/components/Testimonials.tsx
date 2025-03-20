@@ -7,14 +7,14 @@ const testimonialsData = [
     name: "Emily Johnson",
     role: "Wine Enthusiast",
     image: "https://randomuser.me/api/portraits/women/32.jpg",
-    quote: "WineWise transformed my wine experience. I now confidently select bottles for any occasion.",
+    quote: "WineLecture transformed my wine experience. I passed the WSET exams.",
   },
   {
     id: 2,
     name: "Michael Chen",
     role: "Restaurant Owner",
     image: "https://randomuser.me/api/portraits/men/52.jpg",
-    quote: "The courses on wine pairing revolutionized our restaurant's menu.",
+    quote: "The insights on wine pairing revolutionized our restaurant's menu.",
   },
 ];
 
