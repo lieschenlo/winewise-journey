@@ -30,7 +30,7 @@ const Navbar = () => {
       <div className="max-w-7xl mx-auto flex justify-between items-center">
         <Link to="/" className="flex items-center gap-2">
           <Wine className="h-7 w-7 text-wine-600" />
-          <span className="font-serif font-semibold text-xl md:text-2xl text-wine-800">WineWise</span>
+          <span className="font-serif font-semibold text-xl md:text-2xl text-wine-800">WineLecture</span>
         </Link>
         
         <div className="hidden md:flex items-center gap-8">
@@ -77,16 +77,16 @@ const NavLinks = () => {
   return (
     <div className="flex items-center gap-8">
       <Link to="/courses" className="text-wine-700 hover:text-wine-900 underline-animation">
-        Courses
+        Home
       </Link>
       <Link to="/blog" className="text-wine-700 hover:text-wine-900 underline-animation">
-        Blog
+        Courses
       </Link>
       <Link to="/community" className="text-wine-700 hover:text-wine-900 underline-animation">
-        Community
+        Tasting Room
       </Link>
       <Link to="/about" className="text-wine-700 hover:text-wine-900 underline-animation">
-        About
+        Contact
       </Link>
     </div>
   );
