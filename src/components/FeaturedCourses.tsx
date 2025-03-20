@@ -1,4 +1,3 @@
-
 import { Card, CardContent, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
@@ -25,7 +24,7 @@ const coursesData = [
     image: "https://images.unsplash.com/photo-1573062337052-54ad1468be40?q=80&w=2070",
     level: "Advanced",
     duration: "Level 3",
-  }
+  },
   {
     id: 4,
     title: "Mastering Wine & Business",
@@ -40,7 +39,7 @@ const FeaturedCourses = () => {
     <section className="py-20 px-6 bg-white relative">
       <div className="max-w-6xl mx-auto">
         <motion.h2 
-          className="text-3xl font-medium text-gray-800 mb-16 text-center"
+          className="text-3xl font-medium text-gray-800 mb-16 text-left"
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
@@ -49,7 +48,7 @@ const FeaturedCourses = () => {
           Learn.
         </motion.h2>
         
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           {coursesData.map((course, index) => (
             <motion.div
               key={course.id}
