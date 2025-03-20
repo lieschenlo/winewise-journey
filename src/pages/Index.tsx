@@ -19,8 +19,8 @@ const Index = () => {
       <HeroSection />
       <CourseCategories />
       <FeaturedCourses />
-      <Testimonials />
       <AboutSection />
+      <Testimonials />
       <Footer />
     </div>
   );
