@@ -10,21 +10,21 @@ const coursesData = [
     title: "Wine Basics",
     image: "https://images.unsplash.com/photo-1506377247377-2a5b3b417ebb?q=80&w=2070",
     level: "Beginner",
-    duration: "4 weeks",
+    duration: "Level 1",
   },
   {
     id: 2,
     title: "Red Wine Varieties",
     image: "https://images.unsplash.com/photo-1584916201218-f4242ceb4809?q=80&w=2070",
     level: "Intermediate",
-    duration: "6 weeks",
+    duration: "Level 2",
   },
   {
     id: 3,
     title: "Wine Regions",
     image: "https://images.unsplash.com/photo-1573062337052-54ad1468be40?q=80&w=2070",
-    level: "Intermediate",
-    duration: "8 weeks",
+    level: "Advanced",
+    duration: "Level 3",
   }
 ];
 
@@ -39,7 +39,7 @@ const FeaturedCourses = () => {
           viewport={{ once: true }}
           transition={{ duration: 0.5 }}
         >
-          Featured Lectures
+          Learn.
         </motion.h2>
         
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
