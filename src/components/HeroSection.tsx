@@ -10,7 +10,7 @@ const HeroSection = () => {
       <div className="max-w-7xl mx-auto w-full grid grid-cols-1 lg:grid-cols-2 gap-12 relative z-10">
         <div className="flex flex-col justify-center">
           <motion.h1 
-            className="text-5xl md:text-6xl font-medium text-gray-800 leading-tight mb-6"
+            className="text-5xl md:text-6xl font-serif font-medium text-gray-800 leading-tight mb-6"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
@@ -33,7 +33,7 @@ const HeroSection = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.2 }}
           >
-            <Button className="bg-primary hover:bg-primary/90 text-white py-6 px-8">
+            <Button className="bg-primary hover:bg-primary/90 text-white py-6 px-8 font-sans">
               Explore Lectures
             </Button>
           </motion.div>

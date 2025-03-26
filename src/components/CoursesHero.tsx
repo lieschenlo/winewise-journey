@@ -3,18 +3,25 @@ import { motion } from "framer-motion";
 
 const CoursesHero = () => {
   return (
-    <section className="pt-28 pb-16 px-6 bg-white">
-      <div className="max-w-6xl mx-auto">
+    <section className="relative pt-28 pb-16 px-6 overflow-hidden">
+      <div className="absolute inset-0 z-0">
+        <img 
+          src="https://images.unsplash.com/photo-1506377247377-2a5b3b417ebb?q=80&w=2070" 
+          alt="Wine cellar with barrels" 
+          className="w-full h-full object-cover brightness-50"
+        />
+      </div>
+      <div className="max-w-6xl mx-auto relative z-10">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
           className="text-center mb-12"
         >
-          <h1 className="text-4xl md:text-5xl font-serif font-medium text-wine-800 mb-6">
+          <h1 className="text-4xl md:text-5xl font-serif font-medium text-white mb-6">
             Wine Courses
           </h1>
-          <p className="text-lg text-gray-700 max-w-3xl mx-auto">
+          <p className="text-lg text-cream-50 max-w-3xl mx-auto">
             Our comprehensive wine education courses are designed to help you build knowledge and prepare 
             for WSET (Wine & Spirit Education Trust) certifications, the global standard in wine education.
           </p>
@@ -24,7 +31,7 @@ const CoursesHero = () => {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.2 }}
-          className="bg-cream-50 border border-cream-100 rounded-lg p-6 md:p-8 max-w-4xl mx-auto"
+          className="bg-white/90 backdrop-blur-sm border border-cream-100 rounded-lg p-6 md:p-8 max-w-4xl mx-auto"
         >
           <h2 className="text-2xl font-serif text-wine-700 mb-4">Why Study for WSET Qualifications?</h2>
           <p className="text-gray-700 mb-4">
