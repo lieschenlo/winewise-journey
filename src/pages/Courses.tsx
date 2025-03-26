@@ -31,7 +31,6 @@ const Courses = () => {
             <h2 className="text-3xl font-serif mb-6">Experience Wine Before You Study</h2>
             <p className="text-lg mb-8 text-cream-50">
               Visit our tasting room to complement your theoretical knowledge with practical sensory experience.
-              Enhance your understanding of wine characteristics through guided tastings.
             </p>
             <Link to="/tasting-room">
               <Button size="lg" className="bg-cream-100 text-wine-800 hover:bg-cream-200">

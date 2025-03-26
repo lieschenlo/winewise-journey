@@ -1,48 +1,38 @@
 
 import { motion } from "framer-motion";
+import { Button } from "@/components/ui/button";
+import { BookOpen } from "lucide-react";
 
 const CoursesHero = () => {
   return (
-    <section className="relative pt-28 pb-16 px-6 overflow-hidden">
+    <section className="min-h-[80vh] pt-24 pb-16 px-6 flex items-center relative overflow-hidden">
       <div className="absolute inset-0 z-0">
         <img 
-          src="https://images.unsplash.com/photo-1506377247377-2a5b3b417ebb?q=80&w=2070" 
-          alt="Wine cellar with barrels" 
-          className="w-full h-full object-cover brightness-50"
+          src="https://images.unsplash.com/photo-1423483641154-5411ec9c0ddf?q=80&w=2070" 
+          alt="Wine education setting" 
+          className="w-full h-full object-cover brightness-75"
         />
       </div>
-      <div className="max-w-6xl mx-auto relative z-10">
+      
+      <div className="max-w-7xl mx-auto w-full relative z-10">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
-          className="text-center mb-12"
+          className="max-w-2xl ml-auto text-right"
         >
-          <h1 className="text-4xl md:text-5xl font-serif font-medium text-white mb-6">
+          <h1 className="text-5xl md:text-6xl font-serif font-medium text-white leading-tight mb-6">
             Wine Courses
           </h1>
-          <p className="text-lg text-cream-50 max-w-3xl mx-auto">
-            Our comprehensive wine education courses are designed to help you build knowledge and prepare 
-            for WSET (Wine & Spirit Education Trust) certifications, the global standard in wine education.
+          
+          <p className="text-lg text-cream-50 mb-10 max-w-lg ml-auto">
+            Comprehensive wine education designed to help you build knowledge and prepare for WSET certifications
           </p>
-        </motion.div>
-        
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5, delay: 0.2 }}
-          className="bg-white/90 backdrop-blur-sm border border-cream-100 rounded-lg p-6 md:p-8 max-w-4xl mx-auto"
-        >
-          <h2 className="text-2xl font-serif text-wine-700 mb-4">Why Study for WSET Qualifications?</h2>
-          <p className="text-gray-700 mb-4">
-            WSET qualifications are globally recognized as the international standard in wine and spirit knowledge. 
-            Whether you're looking to start a career in the wine industry or simply enhance your appreciation as an enthusiast, 
-            our courses provide structured learning paths from beginner to expert level.
-          </p>
-          <p className="text-gray-700">
-            Each level builds on the previous one, offering a comprehensive foundation in wine styles, 
-            regions, tasting methodology, and service techniques that will prepare you for success in your exams.
-          </p>
+          
+          <Button className="bg-wine-600 hover:bg-wine-700 text-white" size="lg">
+            <BookOpen className="mr-2 h-5 w-5" />
+            View Curriculum
+          </Button>
         </motion.div>
       </div>
     </section>
