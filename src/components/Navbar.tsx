@@ -76,16 +76,16 @@ const Navbar = () => {
 const NavLinks = () => {
   return (
     <div className="flex items-center gap-8">
-      <Link to="/courses" className="text-wine-700 hover:text-wine-900 underline-animation">
+      <Link to="/" className="text-wine-700 hover:text-wine-900 underline-animation">
         Home
       </Link>
-      <Link to="/blog" className="text-wine-700 hover:text-wine-900 underline-animation">
+      <Link to="/courses" className="text-wine-700 hover:text-wine-900 underline-animation">
         Courses
       </Link>
-      <Link to="/community" className="text-wine-700 hover:text-wine-900 underline-animation">
+      <Link to="#" className="text-wine-700 hover:text-wine-900 underline-animation">
         Tasting Room
       </Link>
-      <Link to="/about" className="text-wine-700 hover:text-wine-900 underline-animation">
+      <Link to="#" className="text-wine-700 hover:text-wine-900 underline-animation">
         Contact
       </Link>
     </div>
@@ -97,17 +97,17 @@ const MobileNavLinks = ({ setIsMobileMenuOpen }: { setIsMobileMenuOpen: (value: 
   
   return (
     <div className="flex flex-col gap-4">
+      <Link to="/" className="text-wine-700 hover:text-wine-900 py-1" onClick={handleClick}>
+        Home
+      </Link>
       <Link to="/courses" className="text-wine-700 hover:text-wine-900 py-1" onClick={handleClick}>
         Courses
       </Link>
-      <Link to="/blog" className="text-wine-700 hover:text-wine-900 py-1" onClick={handleClick}>
-        Blog
+      <Link to="#" className="text-wine-700 hover:text-wine-900 py-1" onClick={handleClick}>
+        Tasting Room
       </Link>
-      <Link to="/community" className="text-wine-700 hover:text-wine-900 py-1" onClick={handleClick}>
-        Community
-      </Link>
-      <Link to="/about" className="text-wine-700 hover:text-wine-900 py-1" onClick={handleClick}>
-        About
+      <Link to="#" className="text-wine-700 hover:text-wine-900 py-1" onClick={handleClick}>
+        Contact
       </Link>
     </div>
   );

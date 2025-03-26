@@ -1,7 +1,9 @@
+
 import { Card, CardContent, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 
 const coursesData = [
   {
@@ -38,15 +40,23 @@ const FeaturedCourses = () => {
   return (
     <section className="py-20 px-6 bg-white relative">
       <div className="max-w-6xl mx-auto">
-        <motion.h2 
-          className="text-3xl font-medium text-gray-800 mb-16 text-left"
+        <motion.div 
+          className="flex flex-col md:flex-row justify-between items-center mb-16"
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.5 }}
         >
-          Learn.
-        </motion.h2>
+          <h2 className="text-3xl font-medium text-gray-800 mb-4 md:mb-0">Learn.</h2>
+          <Link to="/courses">
+            <Button 
+              variant="outline" 
+              className="border-wine-300 text-wine-700 hover:text-wine-900 hover:bg-wine-50"
+            >
+              View All Courses
+            </Button>
+          </Link>
+        </motion.div>
         
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           {coursesData.map((course, index) => (
@@ -79,9 +89,11 @@ const FeaturedCourses = () => {
                   </div>
                 </CardContent>
                 <CardFooter>
-                  <Button className="w-full bg-primary hover:bg-primary/90 text-white">
-                    View Course
-                  </Button>
+                  <Link to="/courses" className="w-full">
+                    <Button className="w-full bg-primary hover:bg-primary/90 text-white">
+                      View Course
+                    </Button>
+                  </Link>
                 </CardFooter>
               </Card>
             </motion.div>

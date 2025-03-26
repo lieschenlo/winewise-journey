@@ -1,5 +1,6 @@
 
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 
 const categories = [
   {
@@ -38,26 +39,27 @@ const CourseCategories = () => {
         
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {categories.map((category, index) => (
-            <motion.div
-              key={category.id}
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.5, delay: index * 0.1 }}
-              className="group cursor-pointer relative overflow-hidden"
-            >
-              <div className="aspect-[4/5] overflow-hidden">
-                <img 
-                  src={category.image} 
-                  alt={category.title}
-                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
-                />
-              </div>
-              <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent flex flex-col justify-end p-6">
-                <h3 className="text-xl font-medium text-white mb-1">{category.title}</h3>
-                <p className="text-sm text-white/80">{category.description}</p>
-              </div>
-            </motion.div>
+            <Link to={category.title === "Courses" ? "/courses" : "#"} key={category.id}>
+              <motion.div
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.5, delay: index * 0.1 }}
+                className="group cursor-pointer relative overflow-hidden"
+              >
+                <div className="aspect-[4/5] overflow-hidden">
+                  <img 
+                    src={category.image} 
+                    alt={category.title}
+                    className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                  />
+                </div>
+                <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent flex flex-col justify-end p-6">
+                  <h3 className="text-xl font-medium text-white mb-1">{category.title}</h3>
+                  <p className="text-sm text-white/80">{category.description}</p>
+                </div>
+              </motion.div>
+            </Link>
           ))}
         </div>
       </div>
