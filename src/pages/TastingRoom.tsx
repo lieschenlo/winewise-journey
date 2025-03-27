@@ -36,13 +36,13 @@ const TastingRoom = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5 }}
-              className="bg-white rounded-lg shadow-sm border border-cream-100 p-6 flex flex-col h-full"
+              className="bg-white rounded-md shadow-sm border border-cream-100 p-6 flex flex-col h-full"
             >
               <div className="mb-4">
                 <Utensils className="h-10 w-10 text-wine-600" strokeWidth={2.5} />
               </div>
               <h3 className="text-xl font-serif font-medium text-wine-800 mb-3">Food & Wine Pairing</h3>
-              <p className="text-wine-600 mb-6 flex-grow">
+              <p className="text-lg text-wine-600 mb-6 flex-grow">
                 Discover perfect harmony between cuisine and wine with our expert-guided pairing experiences.
               </p>
               <Link to="/food-pairing">
@@ -58,13 +58,13 @@ const TastingRoom = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: 0.1 }}
-              className="bg-white rounded-lg shadow-sm border border-cream-100 p-6 flex flex-col h-full"
+              className="bg-white rounded-md shadow-sm border border-cream-100 p-6 flex flex-col h-full"
             >
               <div className="mb-4">
                 <Calendar className="h-10 w-10 text-wine-600" strokeWidth={2.5} />
               </div>
               <h3 className="text-xl font-serif font-medium text-wine-800 mb-3">Reserve Your Spot</h3>
-              <p className="text-wine-600 mb-6 flex-grow">
+              <p className="text-lg text-wine-600 mb-6 flex-grow">
                 Book a seat at our tasting table for guided educational tastings with our wine experts.
               </p>
               <Link to="/book-tasting">
@@ -80,13 +80,13 @@ const TastingRoom = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: 0.2 }}
-              className="bg-white rounded-lg shadow-sm border border-cream-100 p-6 flex flex-col h-full"
+              className="bg-white rounded-md shadow-sm border border-cream-100 p-6 flex flex-col h-full"
             >
               <div className="mb-4">
                 <GlassWater className="h-10 w-10 text-wine-600" strokeWidth={2.5} />
               </div>
               <h3 className="text-xl font-serif font-medium text-wine-800 mb-3">Curated Recommendations</h3>
-              <p className="text-wine-600 mb-6 flex-grow">
+              <p className="text-lg text-wine-600 mb-6 flex-grow">
                 Explore our experts' selection of exceptional wines to enhance your tasting journey.
               </p>
               <Link to="/recommendations">

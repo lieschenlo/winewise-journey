@@ -18,7 +18,7 @@ const TastingRoomHero = () => {
               Wine Tasting Room
             </h1>
             
-            <p className="text-base text-wine-600 mb-6 max-w-md">
+            <p className="text-lg text-wine-600 mb-6 max-w-md">
               Explore curated wine experiences to develop your sensory skills. Enhance your tasting abilities through expert guidance.
             </p>
             
@@ -32,7 +32,7 @@ const TastingRoomHero = () => {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.2 }}
-            className="relative h-[400px] rounded-lg overflow-hidden shadow-lg"
+            className="relative h-[400px] rounded-md overflow-hidden shadow-lg"
           >
             <img 
               src="https://images.unsplash.com/photo-1567072363923-5333ab905882?q=80&w=2070" 

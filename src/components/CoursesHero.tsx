@@ -18,7 +18,7 @@ const CoursesHero = () => {
               Wine Courses
             </h1>
             
-            <p className="text-base text-wine-600 mb-6 max-w-md">
+            <p className="text-lg text-wine-600 mb-6 max-w-md">
               Comprehensive wine education designed for WSET certifications. Learn from industry experts in a structured environment.
             </p>
             
@@ -32,7 +32,7 @@ const CoursesHero = () => {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.2 }}
-            className="relative h-[400px] rounded-lg overflow-hidden shadow-lg"
+            className="relative h-[400px] rounded-md overflow-hidden shadow-lg"
           >
             <img 
               src="https://images.unsplash.com/photo-1423483641154-5411ec9c0ddf?q=80&w=2070" 

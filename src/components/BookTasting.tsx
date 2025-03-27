@@ -40,18 +40,18 @@ const BookTasting = () => {
             transition={{ duration: 0.5 }}
             className="order-2 md:order-1"
           >
-            <div className="bg-cream-50 border border-cream-100 rounded-lg p-8">
+            <div className="bg-cream-50 border border-cream-100 rounded-md p-8">
               <h2 className="text-3xl font-serif text-wine-800 mb-4">Book Your Tasting</h2>
-              <p className="text-gray-700 mb-6">
+              <p className="text-lg text-gray-700 mb-6">
                 Join our expert-led tasting sessions to develop your palate and prepare for WSET qualifications.
               </p>
               
               <div className="space-y-4">
                 {tastingSessions.map((session, index) => (
-                  <Card key={index} className="border-cream-100">
+                  <Card key={index} className="border-cream-100 rounded-md">
                     <CardContent className="p-4">
                       <h3 className="text-lg font-serif text-wine-700">{session.title}</h3>
-                      <p className="text-sm text-gray-600 mb-3">{session.description}</p>
+                      <p className="text-gray-600 mb-3">{session.description}</p>
                       <div className="flex flex-wrap gap-4 text-sm text-gray-700">
                         <span className="flex items-center gap-1">
                           <Calendar className="h-4 w-4 text-wine-600" /> {session.duration}
@@ -79,7 +79,7 @@ const BookTasting = () => {
             transition={{ duration: 0.5 }}
             className="order-1 md:order-2"
           >
-            <div className="relative h-[500px] rounded-lg overflow-hidden">
+            <div className="relative h-[500px] rounded-md overflow-hidden">
               <img 
                 src="https://images.unsplash.com/photo-1567072363923-5333ab905882?q=80&w=2070" 
                 alt="Wine tasting" 
