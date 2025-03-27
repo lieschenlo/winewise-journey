@@ -2,26 +2,26 @@
 import { motion } from "framer-motion";
 import { Calendar, MapPin, Wine } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { Card, CardContent } from "@/components/ui/card";
 
 const tastingSessions = [
   {
     title: "WSET Level 1 Tasting Workshop",
-    description: "A perfect introduction to wine tasting techniques using the WSET Systematic Approach to Tasting. Learn how to assess wine like a professional in this guided session.",
+    description: "A perfect introduction to wine tasting techniques using the WSET Systematic Approach to Tasting.",
     duration: "2 hours",
     price: "$75",
     type: "In Person"
   },
   {
     title: "Regional Exploration: Bordeaux",
-    description: "Dive deep into the classic wines of Bordeaux. Compare Left Bank and Right Bank styles while developing your palate to identify key characteristics for your WSET exams.",
+    description: "Dive deep into the classic wines of Bordeaux. Compare Left Bank and Right Bank styles.",
     duration: "3 hours",
     price: "$95",
     type: "In Person"
   },
   {
     title: "Blind Tasting Challenge",
-    description: "Put your tasting skills to the test in this interactive session. Perfect for those preparing for WSET Level 2 and 3 assessments where blind tasting is a key component.",
+    description: "Put your tasting skills to the test in this interactive session. Perfect for WSET Level 2 and 3 preparation.",
     duration: "2.5 hours",
     price: "$85",
     type: "In Person"
@@ -43,18 +43,14 @@ const BookTasting = () => {
             <div className="bg-cream-50 border border-cream-100 rounded-lg p-8">
               <h2 className="text-3xl font-serif text-wine-800 mb-4">Book Your Tasting</h2>
               <p className="text-gray-700 mb-6">
-                Join our expert-led tasting sessions to develop your palate and prepare for WSET 
-                qualifications. Each session is designed to enhance your tasting skills in a focused, 
-                educational environment.
+                Join our expert-led tasting sessions to develop your palate and prepare for WSET qualifications.
               </p>
               
-              <div className="space-y-6">
+              <div className="space-y-4">
                 {tastingSessions.map((session, index) => (
                   <Card key={index} className="border-cream-100">
-                    <CardHeader className="pb-2">
-                      <CardTitle className="text-lg text-wine-700">{session.title}</CardTitle>
-                    </CardHeader>
-                    <CardContent>
+                    <CardContent className="p-4">
+                      <h3 className="text-lg font-serif text-wine-700">{session.title}</h3>
                       <p className="text-sm text-gray-600 mb-3">{session.description}</p>
                       <div className="flex flex-wrap gap-4 text-sm text-gray-700">
                         <span className="flex items-center gap-1">
@@ -90,7 +86,7 @@ const BookTasting = () => {
                 className="w-full h-full object-cover"
               />
               <div className="absolute bottom-0 left-0 right-0 bg-black/60 text-white p-4">
-                <p className="text-lg font-medium mb-1">Our Tasting Room</p>
+                <p className="text-lg font-serif mb-1">Our Tasting Room</p>
                 <p className="text-sm flex items-center">
                   <MapPin className="h-4 w-4 mr-1" /> 123 Wine Avenue, Grapevine, CA 94000
                 </p>

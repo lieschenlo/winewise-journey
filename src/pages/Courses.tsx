@@ -6,7 +6,7 @@ import CoursesHero from "@/components/CoursesHero";
 import CoursesContent from "@/components/CoursesContent";
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
-import { BookOpen, ArrowRight } from "lucide-react";
+import { ArrowRight } from "lucide-react";
 import { Link } from "react-router-dom";
 
 const Courses = () => {
@@ -61,7 +61,6 @@ const Courses = () => {
             </p>
             <Link to="/tasting-room">
               <Button size="lg" className="bg-cream-100 text-wine-800 hover:bg-cream-200">
-                <BookOpen className="mr-2 h-5 w-5" />
                 Explore Our Tasting Room
               </Button>
             </Link>

@@ -5,9 +5,29 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
-import { ArrowLeft, Star } from "lucide-react";
-import { Card, CardContent } from "@/components/ui/card";
+import { ArrowLeft, Star, MapPin } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
+
+const recommendations = [
+  {
+    region: "France",
+    description: "The birthplace of fine wine culture, with regions like Bordeaux, Burgundy, and Champagne setting the global benchmark for quality and tradition.",
+    wineStyles: ["Bordeaux Blends", "Burgundy Pinot Noir", "Champagne", "Loire Valley Whites"],
+    image: "https://images.unsplash.com/photo-1566197147239-cb72fe6db8e0?q=80&w=2000"
+  },
+  {
+    region: "Italy",
+    description: "A diverse wine landscape with over 350 official grape varieties, from the elegant Barolos of Piedmont to the refreshing whites of Alto Adige.",
+    wineStyles: ["Barolo", "Chianti Classico", "Brunello di Montalcino", "Prosecco"],
+    image: "https://images.unsplash.com/photo-1555396273-367ea4eb4db5?q=80&w=1974"
+  },
+  {
+    region: "New World Regions",
+    description: "Innovative winemaking from regions like California, Australia, and New Zealand has revolutionized the global wine scene with distinctive expressions.",
+    wineStyles: ["Napa Cabernet", "Australian Shiraz", "New Zealand Sauvignon Blanc", "Argentine Malbec"],
+    image: "https://images.unsplash.com/photo-1561662416-ce44446c54c7?q=80&w=1980"
+  }
+];
 
 const RecommendationsPage = () => {
   useEffect(() => {
@@ -36,7 +56,7 @@ const RecommendationsPage = () => {
             >
               <img 
                 src="https://images.unsplash.com/photo-1510812431401-41d2bd2722f3?q=80&w=2070"
-                alt="Wine cellar with bottles" 
+                alt="Wine bottles in cellar" 
                 className="rounded-lg shadow-lg object-cover w-full h-[400px]"
               />
             </motion.div>
@@ -56,28 +76,19 @@ const RecommendationsPage = () => {
               </p>
               
               <div className="space-y-6 mb-8">
-                <div className="flex items-start gap-3">
-                  <Star className="h-6 w-6 text-wine-600 mt-1 flex-shrink-0" />
-                  <div>
-                    <h3 className="font-serif text-xl text-wine-800 mb-1">Expert Selection</h3>
-                    <p className="text-wine-600">Each wine is personally tasted and vetted by our sommeliers before recommendation.</p>
-                  </div>
+                <div className="border-l-4 border-wine-600 pl-4">
+                  <h3 className="font-serif text-xl text-wine-800 mb-2">Expert Selection</h3>
+                  <p className="text-wine-600">Each wine is personally tasted and vetted by our sommeliers before recommendation.</p>
                 </div>
                 
-                <div className="flex items-start gap-3">
-                  <Star className="h-6 w-6 text-wine-600 mt-1 flex-shrink-0" />
-                  <div>
-                    <h3 className="font-serif text-xl text-wine-800 mb-1">Educational Focus</h3>
-                    <p className="text-wine-600">Wines chosen to illustrate key concepts from WSET curriculum and wine theory.</p>
-                  </div>
+                <div className="border-l-4 border-wine-600 pl-4">
+                  <h3 className="font-serif text-xl text-wine-800 mb-2">Educational Focus</h3>
+                  <p className="text-wine-600">Wines chosen to illustrate key concepts from WSET curriculum and wine theory.</p>
                 </div>
                 
-                <div className="flex items-start gap-3">
-                  <Star className="h-6 w-6 text-wine-600 mt-1 flex-shrink-0" />
-                  <div>
-                    <h3 className="font-serif text-xl text-wine-800 mb-1">Value at Every Level</h3>
-                    <p className="text-wine-600">From affordable everyday bottles to fine wines, all offering excellent quality for price.</p>
-                  </div>
+                <div className="border-l-4 border-wine-600 pl-4">
+                  <h3 className="font-serif text-xl text-wine-800 mb-2">Value at Every Level</h3>
+                  <p className="text-wine-600">From affordable everyday bottles to fine wines, all offering excellent quality for price.</p>
                 </div>
               </div>
               
@@ -96,52 +107,40 @@ const RecommendationsPage = () => {
           </h2>
           
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {[
-              {
-                name: "Château Margaux 2015",
-                region: "Bordeaux, France",
-                price: "$120",
-                description: "Elegant, refined and complex with notes of dark berries, violets and cedar.",
-                category: "Red Wine"
-              },
-              {
-                name: "Kistler Chardonnay 2018",
-                region: "Sonoma, California",
-                price: "$85",
-                description: "Rich and textured with balanced oak, ripe pear and citrus notes.",
-                category: "White Wine"
-              },
-              {
-                name: "Dom Pérignon 2012",
-                region: "Champagne, France",
-                price: "$210",
-                description: "Precise and vibrant with remarkable depth and persistence on the palate.",
-                category: "Sparkling"
-              }
-            ].map((wine, index) => (
+            {recommendations.map((rec, index) => (
               <motion.div
-                key={index}
+                key={rec.region}
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: index * 0.1 }}
+                className="bg-white rounded-lg overflow-hidden shadow-sm"
               >
-                <Card className="border-cream-200 h-full">
-                  <CardContent className="p-6 flex flex-col h-full">
-                    <Badge className="self-start mb-2 bg-wine-600 hover:bg-wine-700">
-                      {wine.category}
-                    </Badge>
-                    <h3 className="font-serif text-xl text-wine-800 mb-1">{wine.name}</h3>
-                    <p className="text-wine-600 text-sm mb-3">{wine.region}</p>
-                    <p className="text-wine-600 mb-4 flex-grow">{wine.description}</p>
-                    <div className="flex items-center justify-between">
-                      <span className="text-lg font-medium text-wine-800">{wine.price}</span>
-                      <Button variant="outline" className="border-wine-300 text-wine-700 hover:bg-wine-50">
-                        Details
-                      </Button>
+                <div className="h-48 overflow-hidden">
+                  <img 
+                    src={rec.image} 
+                    alt={rec.region} 
+                    className="w-full h-full object-cover transition-transform duration-500 hover:scale-105"
+                  />
+                </div>
+                <div className="p-6">
+                  <h3 className="font-serif text-xl text-wine-800 mb-2 flex items-center">
+                    <MapPin className="mr-2 h-5 w-5 text-wine-600" /> {rec.region}
+                  </h3>
+                  <p className="text-wine-600 mb-4">{rec.description}</p>
+                  <div className="mt-4">
+                    <h4 className="text-wine-700 font-medium mb-3 flex items-center">
+                      <Star className="mr-2 h-4 w-4 text-wine-600" /> Notable Wine Styles:
+                    </h4>
+                    <div className="flex flex-wrap gap-2">
+                      {rec.wineStyles.map((style) => (
+                        <Badge key={style} className="bg-wine-100 text-wine-800 hover:bg-wine-200">
+                          {style}
+                        </Badge>
+                      ))}
                     </div>
-                  </CardContent>
-                </Card>
+                  </div>
+                </div>
               </motion.div>
             ))}
           </div>

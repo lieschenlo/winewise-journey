@@ -39,16 +39,16 @@ const TastingRoom = () => {
               className="bg-white rounded-lg shadow-sm border border-cream-100 p-6 flex flex-col h-full"
             >
               <div className="mb-4">
-                <Utensils className="h-10 w-10 text-wine-600" />
+                <Utensils className="h-10 w-10 text-wine-600" strokeWidth={2.5} />
               </div>
               <h3 className="text-xl font-serif font-medium text-wine-800 mb-3">Food & Wine Pairing</h3>
               <p className="text-wine-600 mb-6 flex-grow">
                 Discover perfect harmony between cuisine and wine with our expert-guided pairing experiences.
               </p>
               <Link to="/food-pairing">
-                <Button className="w-full group" variant="outline">
+                <Button className="w-full group bg-wine-600 hover:bg-wine-700 text-white">
                   Explore Pairings
-                  <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
+                  <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" strokeWidth={2.5} />
                 </Button>
               </Link>
             </motion.div>
@@ -61,16 +61,16 @@ const TastingRoom = () => {
               className="bg-white rounded-lg shadow-sm border border-cream-100 p-6 flex flex-col h-full"
             >
               <div className="mb-4">
-                <Calendar className="h-10 w-10 text-wine-600" />
+                <Calendar className="h-10 w-10 text-wine-600" strokeWidth={2.5} />
               </div>
               <h3 className="text-xl font-serif font-medium text-wine-800 mb-3">Reserve Your Spot</h3>
               <p className="text-wine-600 mb-6 flex-grow">
                 Book a seat at our tasting table for guided educational tastings with our wine experts.
               </p>
               <Link to="/book-tasting">
-                <Button className="w-full group" variant="outline">
+                <Button className="w-full group bg-wine-600 hover:bg-wine-700 text-white">
                   Book a Tasting
-                  <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
+                  <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" strokeWidth={2.5} />
                 </Button>
               </Link>
             </motion.div>
@@ -83,16 +83,16 @@ const TastingRoom = () => {
               className="bg-white rounded-lg shadow-sm border border-cream-100 p-6 flex flex-col h-full"
             >
               <div className="mb-4">
-                <GlassWater className="h-10 w-10 text-wine-600" />
+                <GlassWater className="h-10 w-10 text-wine-600" strokeWidth={2.5} />
               </div>
               <h3 className="text-xl font-serif font-medium text-wine-800 mb-3">Curated Recommendations</h3>
               <p className="text-wine-600 mb-6 flex-grow">
                 Explore our experts' selection of exceptional wines to enhance your tasting journey.
               </p>
               <Link to="/recommendations">
-                <Button className="w-full group" variant="outline">
+                <Button className="w-full group bg-wine-600 hover:bg-wine-700 text-white">
                   View Recommendations
-                  <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
+                  <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" strokeWidth={2.5} />
                 </Button>
               </Link>
             </motion.div>
