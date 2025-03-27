@@ -5,7 +5,7 @@ import { Wine } from "lucide-react";
 
 const TastingRoomHero = () => {
   return (
-    <section className="min-h-[80vh] pt-24 pb-16 px-6 flex items-center relative overflow-hidden">
+    <section className="min-h-[60vh] pt-20 pb-12 px-6 flex items-center relative overflow-hidden">
       <div className="absolute inset-0 z-0">
         <img 
           src="https://images.unsplash.com/photo-1567072363923-5333ab905882?q=80&w=2070" 
@@ -19,14 +19,14 @@ const TastingRoomHero = () => {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
-          className="max-w-2xl"
+          className="max-w-xl"
         >
-          <h1 className="text-5xl md:text-6xl font-serif font-medium text-white leading-tight mb-6">
+          <h1 className="text-4xl md:text-5xl font-serif font-medium text-white leading-tight mb-4">
             Wine Tasting Room
           </h1>
           
-          <p className="text-lg text-cream-50 mb-10 max-w-lg">
-            Explore curated wine experiences that enhance your appreciation journey and develop your sensory evaluation skills
+          <p className="text-base text-cream-50 mb-6 max-w-md">
+            Explore curated wine experiences to develop your sensory skills
           </p>
           
           <Button className="bg-cream-100 text-wine-800 hover:bg-cream-200" size="lg">
