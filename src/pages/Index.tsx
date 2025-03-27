@@ -5,7 +5,6 @@ import HeroSection from "@/components/HeroSection";
 import CourseCategories from "@/components/CourseCategories";
 import FeaturedCourses from "@/components/FeaturedCourses";
 import Testimonials from "@/components/Testimonials";
-import TeamSection from "@/components/TeamSection";
 import Footer from "@/components/Footer";
 
 const Index = () => {
@@ -19,7 +18,6 @@ const Index = () => {
       <HeroSection />
       <CourseCategories />
       <FeaturedCourses />
-      <TeamSection />
       <Testimonials />
       <Footer />
     </div>

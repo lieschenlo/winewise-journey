@@ -1,4 +1,3 @@
-
 import { useEffect } from "react";
 import { motion } from "framer-motion";
 import Navbar from "@/components/Navbar";
@@ -8,7 +7,8 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Label } from "@/components/ui/label";
-import { Mail, Phone, MapPin, Send } from "lucide-react";
+import { Mail, Phone, MapPin, Send, Users } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const Contact = () => {
   useEffect(() => {
@@ -30,7 +30,7 @@ const Contact = () => {
         
         <div className="max-w-7xl mx-auto w-full relative z-10">
           <motion.div
-            initial={{ opacity: 0, y: 20 }}
+            initial={{ opacity: 0, y: 0 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
             className="max-w-xl"
@@ -42,6 +42,13 @@ const Contact = () => {
             <p className="text-base text-cream-50 mb-6 max-w-md">
               Get in touch with our wine experts for any questions about courses or tastings
             </p>
+            
+            <Link to="/about-us">
+              <Button className="bg-wine-600 hover:bg-wine-700 text-white">
+                <Users className="mr-2 h-4 w-4" />
+                About Our Team
+              </Button>
+            </Link>
           </motion.div>
         </div>
       </section>

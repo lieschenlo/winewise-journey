@@ -5,11 +5,11 @@ import { BookOpen } from "lucide-react";
 
 const CoursesHero = () => {
   return (
-    <section className="min-h-[40vh] py-10 px-6 bg-cream-50 overflow-hidden">
+    <section className="min-h-[40vh] py-20 px-6 bg-cream-50 overflow-hidden">
       <div className="max-w-7xl mx-auto">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <motion.div
-            initial={{ opacity: 0, y: 20 }}
+            initial={{ opacity: 0, y: 0 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
             className="text-left"
@@ -29,7 +29,7 @@ const CoursesHero = () => {
           </motion.div>
 
           <motion.div
-            initial={{ opacity: 0, y: 20 }}
+            initial={{ opacity: 0, y: 0 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.2 }}
             className="relative h-[400px] rounded-md overflow-hidden shadow-lg"
