@@ -6,7 +6,7 @@ import CoursesHero from "@/components/CoursesHero";
 import CoursesContent from "@/components/CoursesContent";
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
-import { BookOpen } from "lucide-react";
+import { BookOpen, ArrowRight } from "lucide-react";
 import { Link } from "react-router-dom";
 
 const Courses = () => {
@@ -19,6 +19,33 @@ const Courses = () => {
       <Navbar />
       <CoursesHero />
       <CoursesContent />
+      
+      <section className="py-12 px-6 bg-cream-50">
+        <div className="max-w-6xl mx-auto">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.5 }}
+            className="bg-white rounded-lg shadow-sm border border-cream-100 p-8"
+          >
+            <div className="flex flex-col md:flex-row items-center justify-between gap-6">
+              <div>
+                <h2 className="text-2xl font-serif font-medium text-wine-800 mb-2">Mastering Wine & Business</h2>
+                <p className="text-wine-600">
+                  Explore our most advanced Level 4 Diploma program for wine industry professionals
+                </p>
+              </div>
+              <Link to="/level4">
+                <Button className="bg-wine-600 hover:bg-wine-700 text-white group">
+                  View Diploma Program
+                  <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
+                </Button>
+              </Link>
+            </div>
+          </motion.div>
+        </div>
+      </section>
       
       <section className="py-16 px-6 bg-wine-700 text-white">
         <div className="max-w-4xl mx-auto text-center">
