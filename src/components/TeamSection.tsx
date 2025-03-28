@@ -33,7 +33,7 @@ const TeamSection = () => {
           >
             <div className="relative h-[350px]">
               <img 
-                src="https://images.unsplash.com/photo-1560365163-3e8d64e762ef?q=80&w=1964" 
+                src="https://images.unsplash.com/photo-1592890288564-76628a30a657?q=80&w=1964" 
                 alt="Felix, Wine Expert & Educator" 
                 className="w-full h-full object-cover"
               />
@@ -63,7 +63,7 @@ const TeamSection = () => {
           >
             <div className="relative h-[350px]">
               <img 
-                src="https://images.unsplash.com/photo-1551836022-d5d88e9218df?q=80&w=1974" 
+                src="https://images.unsplash.com/photo-1559925393-8be0ec4767c8?q=80&w=1974" 
                 alt="Lisa-Marie, Director of Education" 
                 className="w-full h-full object-cover"
               />
