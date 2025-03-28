@@ -35,7 +35,7 @@ const TastingRoomHero = () => {
             className="relative h-[400px] rounded-md overflow-hidden shadow-lg"
           >
             <img 
-              src="https://images.unsplash.com/photo-1561662416-ce44446c54c7?q=80&w=1980" 
+              src="https://images.unsplash.com/photo-1516594915697-87eb3b1c14ea?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" 
               alt="Wine tasting experience" 
               className="w-full h-full object-cover"
             />
