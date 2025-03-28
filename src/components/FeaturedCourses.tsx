@@ -16,14 +16,14 @@ const coursesData = [
   {
     id: 2,
     title: "Exploring Wine Styles",
-    image: "https://images.unsplash.com/photo-1584916201218-f4242ceb4809?q=80&w=2070",
+    image: "https://images.unsplash.com/photo-1576702384424-14ca7a1d2d9c?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     level: "Intermediate",
     duration: "Level 2",
   },
   {
     id: 3,
     title: "Advanced Wine Knowledge",
-    image: "https://images.unsplash.com/photo-1573062337052-54ad1468be40?q=80&w=2070",
+    image: "https://images.unsplash.com/photo-1596438214057-5ff7c7fa76b1?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzB8fHdpbmV8ZW58MHwwfDB8fHwy",
     level: "Advanced",
     duration: "Level 3",
   },
