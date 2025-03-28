@@ -19,7 +19,7 @@ const AboutUs = () => {
       <section className="min-h-[50vh] pt-20 pb-12 px-6 flex items-center relative overflow-hidden">
         <div className="absolute inset-0 z-0">
           <img 
-            src="https://images.unsplash.com/photo-1560365163-3e8d64e762ef?q=80&w=1964" 
+            src="https://images.unsplash.com/photo-1568213816046-0a1366d0c6ac?q=80&w=2070" 
             alt="Wine education setting" 
             className="w-full h-full object-cover brightness-90"
           />

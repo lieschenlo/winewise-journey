@@ -96,7 +96,13 @@ const NavLinks = ({ currentPath }) => {
         Tasting Room
       </Link>
       <Link 
-        to="#" 
+        to="/about-us" 
+        className={`text-wine-700 hover:text-wine-900 underline-animation ${currentPath === '/about-us' ? 'font-medium' : ''}`}
+      >
+        About Us
+      </Link>
+      <Link 
+        to="/contact" 
         className="text-wine-700 hover:text-wine-900 underline-animation"
       >
         Contact
@@ -132,7 +138,14 @@ const MobileNavLinks = ({ currentPath, setIsMobileMenuOpen }: { currentPath: str
         Tasting Room
       </Link>
       <Link 
-        to="#" 
+        to="/about-us" 
+        className={`text-wine-700 hover:text-wine-900 py-1 ${currentPath === '/about-us' ? 'font-medium' : ''}`}
+        onClick={handleClick}
+      >
+        About Us
+      </Link>
+      <Link 
+        to="/contact" 
         className="text-wine-700 hover:text-wine-900 py-1"
         onClick={handleClick}
       >
