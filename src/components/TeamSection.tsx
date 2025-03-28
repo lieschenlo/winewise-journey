@@ -34,17 +34,17 @@ const TeamSection = () => {
             <div className="relative h-[350px]">
               <img 
                 src="https://images.unsplash.com/photo-1592890288564-76628a30a657?q=80&w=1964" 
-                alt="Felix, Wine Expert & Educator" 
+                alt="Felix, Wine Expert & Sommelier" 
                 className="w-full h-full object-cover"
               />
             </div>
             <div className="p-6">
-              <h3 className="text-2xl font-serif font-medium text-wine-800 mb-2">Felix Weber</h3>
+              <h3 className="text-2xl font-serif font-medium text-wine-800 mb-2">Felix</h3>
               <p className="text-wine-600 font-medium mb-2">WSET Certified Educator & Sommelier</p>
               <p className="text-gray-600 mb-4">
-                With over 15 years of experience in the wine industry and a background in hospitality management, 
-                Felix brings extensive knowledge and a passion for making wine education accessible to all. 
-                He has worked in renowned vineyards across Europe before founding WineLecture.
+                Felix is a Master Sommelier with the WSET Wine Diploma. 
+                He came up with the idea for this platform to support people in their 
+                learning journey and share his passion for wine.
               </p>
               <Link to="/contact">
                 <Button variant="outline" className="border-wine-300 text-wine-700 hover:bg-wine-50">
@@ -64,17 +64,16 @@ const TeamSection = () => {
             <div className="relative h-[350px]">
               <img 
                 src="https://images.unsplash.com/photo-1559925393-8be0ec4767c8?q=80&w=1974" 
-                alt="Lisa-Marie, Director of Education" 
+                alt="Lisa-Marie, Content & Design Lead" 
                 className="w-full h-full object-cover"
               />
             </div>
             <div className="p-6">
-              <h3 className="text-2xl font-serif font-medium text-wine-800 mb-2">Lisa-Marie Fischer</h3>
-              <p className="text-wine-600 font-medium mb-2">Director of Education & WSET Diploma Holder</p>
+              <h3 className="text-2xl font-serif font-medium text-wine-800 mb-2">Lisa-Marie</h3>
+              <p className="text-wine-600 font-medium mb-2">Content & Design Lead</p>
               <p className="text-gray-600 mb-4">
-                Lisa-Marie combines her WSET Diploma expertise with a background in educational psychology 
-                to develop our curriculum. Her innovative teaching approaches and deep understanding of wine 
-                regions worldwide have made our courses both engaging and comprehensive.
+                Lisa-Marie implemented the concept and developed a modern, 
+                engaging platform that brings wine knowledge closer to enthusiasts.
               </p>
               <Link to="/contact">
                 <Button variant="outline" className="border-wine-300 text-wine-700 hover:bg-wine-50">
