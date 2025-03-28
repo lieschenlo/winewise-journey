@@ -37,12 +37,16 @@ const Navbar = () => {
         <div className="hidden md:flex items-center gap-8">
           <NavLinks currentPath={location.pathname} />
           <div className="flex gap-4">
-            <Button variant="outline" className="border-wine-300 text-wine-700 hover:text-wine-900 hover:bg-wine-50">
-              Log In
-            </Button>
-            <Button className="bg-wine-600 hover:bg-wine-700 text-white">
-              Start Learning
-            </Button>
+            <Link to="/login">
+              <Button variant="outline" className="border-wine-300 text-wine-700 hover:text-wine-900 hover:bg-wine-50">
+                Log In
+              </Button>
+            </Link>
+            <Link to="/courses">
+              <Button className="bg-wine-600 hover:bg-wine-700 text-white">
+                Start Learning
+              </Button>
+            </Link>
           </div>
         </div>
         
@@ -61,12 +65,16 @@ const Navbar = () => {
         <div className="p-6 flex flex-col gap-4">
           <MobileNavLinks currentPath={location.pathname} setIsMobileMenuOpen={setIsMobileMenuOpen} />
           <div className="flex flex-col gap-3 mt-4">
-            <Button variant="outline" className="border-wine-300 text-wine-700 w-full">
-              Log In
-            </Button>
-            <Button className="bg-wine-600 hover:bg-wine-700 text-white w-full">
-              Start Learning
-            </Button>
+            <Link to="/login" onClick={() => setIsMobileMenuOpen(false)}>
+              <Button variant="outline" className="border-wine-300 text-wine-700 w-full">
+                Log In
+              </Button>
+            </Link>
+            <Link to="/courses" onClick={() => setIsMobileMenuOpen(false)}>
+              <Button className="bg-wine-600 hover:bg-wine-700 text-white w-full">
+                Start Learning
+              </Button>
+            </Link>
           </div>
         </div>
       </div>

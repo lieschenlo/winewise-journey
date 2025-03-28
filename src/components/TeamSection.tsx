@@ -12,12 +12,16 @@ const TeamSection = () => {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.5 }}
-          className="text-center mb-12"
+          className="text-center mb-16"
         >
-          <h2 className="text-3xl md:text-4xl font-serif font-medium text-wine-800 mb-4">
-            Meet Our Team
-          </h2>
-          <p className="text-wine-600 max-w-2xl mx-auto">
+          <div className="inline-block mb-3">
+            <div className="h-1 w-12 bg-wine-500 mx-auto"></div>
+            <h2 className="text-3xl md:text-5xl font-serif font-medium text-wine-800 mt-4 mb-6">
+              Meet Our Team
+            </h2>
+            <div className="h-1 w-12 bg-wine-500 mx-auto"></div>
+          </div>
+          <p className="text-wine-600 max-w-2xl mx-auto text-lg">
             Our passion for wine and education brought us together to create WineLecture, 
             where we combine our expertise to offer exceptional wine learning experiences.
           </p>
@@ -29,13 +33,13 @@ const TeamSection = () => {
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.5 }}
-            className="bg-white rounded-md overflow-hidden shadow-sm"
+            className="bg-white rounded-md overflow-hidden shadow-sm group hover:shadow-md transition-all duration-300"
           >
-            <div className="relative h-[350px]">
+            <div className="relative h-[350px] overflow-hidden">
               <img 
                 src="https://images.unsplash.com/photo-1532356948574-9f03b5dcd0b3?q=80&w=1980&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" 
                 alt="Felix, Wine Expert & Sommelier" 
-                className="w-full h-full object-cover"
+                className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
               />
             </div>
             <div className="p-6">
@@ -59,13 +63,13 @@ const TeamSection = () => {
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.5, delay: 0.2 }}
-            className="bg-white rounded-md overflow-hidden shadow-sm"
+            className="bg-white rounded-md overflow-hidden shadow-sm group hover:shadow-md transition-all duration-300"
           >
-            <div className="relative h-[350px]">
+            <div className="relative h-[350px] overflow-hidden">
               <img 
                 src="https://images.unsplash.com/photo-1534278931827-8a259344abe7?q=80&w=2070" 
                 alt="Lisa-Marie, Content & Design Lead" 
-                className="w-full h-full object-cover"
+                className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
               />
             </div>
             <div className="p-6">
