@@ -5,6 +5,7 @@ import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { motion } from "framer-motion";
 import { Book, GraduationCap, Award, Check, Info } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const levelCourses = [
   {
@@ -15,6 +16,7 @@ const levelCourses = [
     level: "Beginner",
     duration: "8-10 Hours",
     price: "$299",
+    link: "/foundations-of-wine",
     includes: [
       "Wine tasting techniques",
       "Food and wine pairing basics",
@@ -31,6 +33,7 @@ const levelCourses = [
     level: "Intermediate",
     duration: "16-20 Hours",
     price: "$599",
+    link: "/courses",
     includes: [
       "Detailed wine tasting methodology",
       "Major grape varieties and regions",
@@ -47,6 +50,7 @@ const levelCourses = [
     level: "Advanced",
     duration: "32-36 Hours",
     price: "$999",
+    link: "/courses",
     includes: [
       "Comprehensive global wine regions",
       "Advanced sensory evaluation",
@@ -63,6 +67,7 @@ const levelCourses = [
     level: "Diploma",
     duration: "120+ Hours",
     price: "$2499",
+    link: "/level4",
     includes: [
       "Global wine business strategies",
       "In-depth viticulture and vinification",
@@ -208,9 +213,11 @@ const CoursesContent = () => {
                       </div>
                     </CardContent>
                     <CardFooter className="pt-2">
-                      <Button className="w-full bg-wine-600 hover:bg-wine-700 text-white">
-                        Enroll Now
-                      </Button>
+                      <Link to={course.link} className="w-full">
+                        <Button className="w-full bg-wine-600 hover:bg-wine-700 text-white">
+                          Enroll Now
+                        </Button>
+                      </Link>
                     </CardFooter>
                   </Card>
                 </motion.div>

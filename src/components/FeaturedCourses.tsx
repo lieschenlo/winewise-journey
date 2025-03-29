@@ -12,6 +12,7 @@ const coursesData = [
     image: "https://images.unsplash.com/photo-1506377247377-2a5b3b417ebb?q=80&w=2070",
     level: "Beginner",
     duration: "Level 1",
+    link: "/foundations-of-wine"
   },
   {
     id: 2,
@@ -19,6 +20,7 @@ const coursesData = [
     image: "https://images.unsplash.com/photo-1576702384424-14ca7a1d2d9c?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     level: "Intermediate",
     duration: "Level 2",
+    link: "/courses"
   },
   {
     id: 3,
@@ -26,6 +28,7 @@ const coursesData = [
     image: "https://images.unsplash.com/photo-1596438214057-5ff7c7fa76b1?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzB8fHdpbmV8ZW58MHwwfDB8fHwy",
     level: "Advanced",
     duration: "Level 3",
+    link: "/courses"
   },
   {
     id: 4,
@@ -33,6 +36,7 @@ const coursesData = [
     image: "https://images.unsplash.com/photo-1584916201218-f4242ceb4809?q=80&w=2070",
     level: "Diploma",
     duration: "Level 4",
+    link: "/level4"
   },
 ];
 
@@ -89,7 +93,7 @@ const FeaturedCourses = () => {
                   </div>
                 </CardContent>
                 <CardFooter>
-                  <Link to="/courses" className="w-full">
+                  <Link to={course.link} className="w-full">
                     <Button className="w-full bg-primary hover:bg-primary/90 text-white">
                       View Course
                     </Button>
