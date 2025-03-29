@@ -6,6 +6,7 @@ import Footer from "@/components/Footer";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import Flashcards from "@/components/Flashcards";
 import ExcelUploader from "@/components/ExcelUploader";
+import FrenchWineMap from "@/components/FrenchWineMap";
 import { toast } from "@/components/ui/use-toast";
 
 const FoundationsOfWine = () => {
@@ -67,6 +68,9 @@ const FoundationsOfWine = () => {
                 <TabsTrigger value="flashcards" className="data-[state=active]:bg-primary data-[state=active]:text-white px-6">
                   Flashcards
                 </TabsTrigger>
+                <TabsTrigger value="wine-regions" className="data-[state=active]:bg-primary data-[state=active]:text-white px-6">
+                  Wine Regions
+                </TabsTrigger>
               </TabsList>
             </div>
             
@@ -112,6 +116,11 @@ const FoundationsOfWine = () => {
                 <p className="text-gray-600 mb-6">
                   Our interactive flashcards help you master wine knowledge through effective spaced repetition. Upload your own study material or use our curated sets.
                 </p>
+                
+                <h3 className="text-xl font-medium text-wine-800 mb-4">Interactive Wine Regions</h3>
+                <p className="text-gray-600 mb-6">
+                  Test your knowledge of French wine appellations with our drag-and-drop exercise. Learn the major wine producing regions of France while having fun.
+                </p>
               </motion.div>
             </TabsContent>
             
@@ -139,6 +148,24 @@ const FoundationsOfWine = () => {
                 </motion.div>
                 
                 <Flashcards initialCards={flashcardsData} />
+              </div>
+            </TabsContent>
+            
+            <TabsContent value="wine-regions" className="mt-0">
+              <div className="max-w-5xl mx-auto">
+                <motion.div
+                  initial={{ opacity: 0, y: 20 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.5 }}
+                  className="mb-10"
+                >
+                  <h2 className="text-3xl font-medium text-wine-800 mb-6 text-center">French Wine Appellations</h2>
+                  <p className="text-gray-600 mb-8 text-center max-w-2xl mx-auto">
+                    Learn the major wine regions of France with this interactive map. Drag each wine region to its correct location.
+                  </p>
+                </motion.div>
+                
+                <FrenchWineMap />
               </div>
             </TabsContent>
           </Tabs>
